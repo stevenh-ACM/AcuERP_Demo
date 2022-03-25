@@ -3,7 +3,15 @@
 @{
     ViewData["Title"] = "About";
 }
-<div class="jumbotron shadow p-3 mb-5" style="background-image:url('/images/bg_homepage.jpg'); height:400px;">
-    <h2>About the Demo Application</h2>
-    <br/>
+<div class="card h-100 shadow">
+    <img class="card-img" src="~/images/bg_homepage.jpg" style="height:auto"/> 
+    <div class="card-img-overlay">
+        <div class="card-body">
+            <h1 class="card-title">@ViewData["Title"]</h1>
+            <p class="card-text text-wrap" style="width:450px">Acumatica ERP information required to start. <br /><br />Select the Demo you wish to perfrom...</p>
+        </div>  
+        <div class="card-footer bg-transparent border-0">
+            <p><a class="btn btn-primary" asp-area="Demo" asp-page="/AcuCreds/Index">Demo Setup &raquo;</a></p>
+        </div>
+    </div>   
 </div>

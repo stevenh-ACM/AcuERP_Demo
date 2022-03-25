@@ -4,30 +4,29 @@
     ViewData["Title"] = "Demo Home";
 }
 
- <div class="container-fluid shadow px-2 mb-4">    
-     <div class="row">
-         <div class="card bg-light">
-            <img class="card-img" src="../images/bg_homepage.jpg") style="height:auto"/> 
-            <div class="card-body card-img-overlay">             
-                <h1 class="card-title">Demo Home</h1>
-                <p class="card-text text-wrap" style="width: auto">Acumatica ERP information required to start. <br /><br />Select the Demo you wish to perfrom...</p>
-            </div>
-            <div>
-                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-area="Demo" asp-page=/AcuCreds/Index>Demo Setup &raquo;</a></p>
-            </div>
+<div class="card h-100 shadow">
+    <img class="card-img" src="../images/bg_homepage.jpg" style="height:auto"/> 
+    <div class="card-img-overlay">
+        <div class="card-body">
+            <h1 class="card-title">@ViewData["Title"]</h1>
+            <p class="card-text text-wrap" style="width:450px">Acumatica ERP information required to start. <br /><br />Select the Demo you wish to perfrom...</p>
+        </div>  
+        <div class="card-footer bg-transparent border-0">
+            <p><a class="btn btn-primary" asp-area="Demo" asp-page="/AcuCreds/Index">Demo Setup &raquo;</a></p>
         </div>
-    </div>
+    </div>   
 </div>
+
 <br/>
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
         <div class="card h-100 shadow">        
             <div class="card-body">
                 <h3 class=card-title>Sales Orders</h3>
-                <p class="card-texttext-wrap" style="width: auto">The following demo shows how to create a sales order using ReST Open APIs.</p>
+                <p class="card-text text-wrap" style="width: auto">The following demo shows how to create a sales order using ReST Open APIs.</p>
             </div>
-            <div>
-                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page=/SalesOrders/Index>Get Sales Orders &raquo;</a></p>
+            <div class="card-footer bg-transparent border-0">
+                <p><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/SalesOrders/Index">Get Sales Orders &raquo;</a></p>
             </div>
         </div>
     </div>  
@@ -36,10 +35,10 @@
         <div class="card h-100 shadow">            
             <div class="card-body">
                 <h3 class=card-title>Contacts</h3>
-                <p class="card-texttext-wrap" style="width: auto">The following demo shows how to create a contact using ReST Open APIs.</p>
+                <p class="card-text text-wrap" style="width: auto">The following demo shows how to create a contact using ReST Open APIs.</p>
             </div>
-            <div>
-                    <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Contacts/Index">Get Contacts &raquo;</a></p>
+            <div class="card-footer bg-transparent border-0">
+                 <p><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Contacts/Index">Get Contacts &raquo;</a></p>
             </div>
         </div>
     </div>
@@ -50,8 +49,8 @@
                 <h3 class=card-title>Opportunities</h3>
                 <p class="card-text text-wrap" style="width: auto">The following demo shows how to create an opportunity using ReST Open APIs.</p>
             </div>
-            <div>
-                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Opportunities/Index">Get Opportunities &raquo;</a></p>
+            <div class="card-footer bg-transparent border-0">
+                <p><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Opportunities/Index">Get Opportunities &raquo;</a></p>
             </div>
         </div>   
     </div>
@@ -75,7 +74,7 @@
                 <p class="card-text text-wrap" style="width: auto">The following demo shows how to create a case using ReST Open APIs.</p>
             </div>
             <div>
-                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Cases/Index">Get Bills &raquo;</a></p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Bills/Index">Get Bills &raquo;</a></p>
             </div>
         </div>
     </div>
@@ -87,7 +86,7 @@
                 <p class="card-text text-wrap" style="width: auto">The following demo shows how to create a case using ReST Open APIs.</p>
             </div>
             <div>
-                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Cases/Index">Get Shipments &raquo;</a></p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary" asp-route-id="1" asp-area="Demo" asp-page="/Ships/Index">Get Shipments &raquo;</a></p>
             </div>
         </div>
     </div>
