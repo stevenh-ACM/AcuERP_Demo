@@ -13,11 +13,13 @@ namespace AcuERP_Demo.Areas.Demo.Pages.AcuCreds
 {
     public class DeleteModel : PageModel
     {
-        private readonly AcuERP_Demo.Data.AppDbContext _context;
+        private readonly AppDbContext _context;
+        private readonly ILogger<IndexModel> _logger;
 
-        public DeleteModel(AcuERP_Demo.Data.AppDbContext context)
+        public DeleteModel(AppDbContext context, ILogger<IndexModel> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [BindProperty]

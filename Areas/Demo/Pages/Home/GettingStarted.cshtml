@@ -3,9 +3,17 @@
 @{
     ViewData["Title"] = "Getting Started";
 }
-<div class="jumbotron shadow p-3 mb-5" style="background-image:url('/images/bg_homepage.jpg'); height:auto;">
-    <h2>Getting Started</h2>
-    <p class="lead text-break">Documentation</p>
+<div class="card h-100 shadow">
+    <img class="card-img" src="~/images/bg_homepage.jpg" style="height:auto"/> 
+    <div class="card-img-overlay">
+        <div class="card-body">
+            <h1 class="card-title">@ViewData["Title"]</h1>
+            <p class="card-text text-wrap" style="width:450px">Demo information required to perform Demos.</p>
+        </div>  
+        <div class="card-footer bg-transparent border-0">
+            <p><a class="btn btn-primary" asp-area="" asp-page="/Index">Go Back &raquo;</a></p>
+        </div>
+    </div>   
 </div>
     <div id="toc_container">
     <p class="toc_title">Contents</p>
@@ -20,5 +28,5 @@
     <li><a href="#Third_Point_Header">3 Third Point Header</a></li>
     </ul>
     </div>
-
+    Get the RevisionTwo demo data from the Sales -> Demo Materials section of the Acumatica Partner Portal.
 

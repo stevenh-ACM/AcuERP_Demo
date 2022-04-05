@@ -1,0 +1,118 @@
+﻿@page
+@model AcuERP_Demo.Areas.Demo.Pages.Contacts.CreateModel
+
+<h4>CR_Contact</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Active" class="control-label"></label>
+                <input asp-for="CR_Contact.Active" class="form-control" />
+                <span asp-validation-for="CR_Contact.Active" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Address" class="control-label"></label>
+                <input asp-for="CR_Contact.Address" class="form-control" />
+                <span asp-validation-for="CR_Contact.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.BusinessAccount" class="control-label"></label>
+                <input asp-for="CR_Contact.BusinessAccount" class="form-control" />
+                <span asp-validation-for="CR_Contact.BusinessAccount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.CompanyName" class="control-label"></label>
+                <input asp-for="CR_Contact.CompanyName" class="form-control" />
+                <span asp-validation-for="CR_Contact.CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.ContactClass" class="control-label"></label>
+                <input asp-for="CR_Contact.ContactClass" class="form-control" />
+                <span asp-validation-for="CR_Contact.ContactClass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.ContactID" class="control-label"></label>
+                <input asp-for="CR_Contact.ContactID" class="form-control" />
+                <span asp-validation-for="CR_Contact.ContactID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.DisplayName" class="control-label"></label>
+                <input asp-for="CR_Contact.DisplayName" class="form-control" />
+                <span asp-validation-for="CR_Contact.DisplayName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Email" class="control-label"></label>
+                <input asp-for="CR_Contact.Email" class="form-control" />
+                <span asp-validation-for="CR_Contact.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.FirstName" class="control-label"></label>
+                <input asp-for="CR_Contact.FirstName" class="form-control" />
+                <span asp-validation-for="CR_Contact.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.JobTitle" class="control-label"></label>
+                <input asp-for="CR_Contact.JobTitle" class="form-control" />
+                <span asp-validation-for="CR_Contact.JobTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.LastName" class="control-label"></label>
+                <input asp-for="CR_Contact.LastName" class="form-control" />
+                <span asp-validation-for="CR_Contact.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.MiddleName" class="control-label"></label>
+                <input asp-for="CR_Contact.MiddleName" class="form-control" />
+                <span asp-validation-for="CR_Contact.MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Owner" class="control-label"></label>
+                <input asp-for="CR_Contact.Owner" class="form-control" />
+                <span asp-validation-for="CR_Contact.Owner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.OwnerEmployeeName" class="control-label"></label>
+                <input asp-for="CR_Contact.OwnerEmployeeName" class="form-control" />
+                <span asp-validation-for="CR_Contact.OwnerEmployeeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.ParentAccount" class="control-label"></label>
+                <input asp-for="CR_Contact.ParentAccount" class="form-control" />
+                <span asp-validation-for="CR_Contact.ParentAccount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Phone1" class="control-label"></label>
+                <input asp-for="CR_Contact.Phone1" class="form-control" />
+                <span asp-validation-for="CR_Contact.Phone1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Phone1Type" class="control-label"></label>
+                <input asp-for="CR_Contact.Phone1Type" class="form-control" />
+                <span asp-validation-for="CR_Contact.Phone1Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Title" class="control-label"></label>
+                <input asp-for="CR_Contact.Title" class="form-control" />
+                <span asp-validation-for="CR_Contact.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CR_Contact.Type" class="control-label"></label>
+                <input asp-for="CR_Contact.Type" class="form-control" />
+                <span asp-validation-for="CR_Contact.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

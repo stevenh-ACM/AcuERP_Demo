@@ -9,33 +9,34 @@ using Microsoft.EntityFrameworkCore;
 using AcuERP_Demo.Data;
 using AcuERP_Demo.Models;
 
-namespace AcuERP_Demo.Areas.Demo.Pages.AcuCreds
+namespace AcuERP_Demo.Areas.Demo.Pages.AcuCreds;
+
+public class DetailsModel : PageModel
 {
-    public class DetailsModel : PageModel
+    private readonly AppDbContext _context;
+    private readonly ILogger<IndexModel> _logger;
+
+    public DetailsModel(AppDbContext context, ILogger<IndexModel> logger)
     {
-        private readonly AcuERP_Demo.Data.AppDbContext _context;
+        _context = context;
+        _logger = logger;
+    }
 
-        public DetailsModel(AcuERP_Demo.Data.AppDbContext context)
+    public AcuAuth AcuAuth { get; set; }
+
+    public async Task<IActionResult> OnGetAsync(int? id)
+    {
+        if (id == null)
         {
-            _context = context;
+            return NotFound();
         }
 
-        public AcuAuth AcuAuth { get; set; }
+        AcuAuth = await _context.AcuAuths.FirstOrDefaultAsync(m => m.Id == id);
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        if (AcuAuth == null)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            AcuAuth = await _context.AcuAuths.FirstOrDefaultAsync(m => m.Id == id);
-
-            if (AcuAuth == null)
-            {
-                return NotFound();
-            }
-            return Page();
+            return NotFound();
         }
+        return Page();
     }
 }

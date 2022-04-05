@@ -1,0 +1,1 @@
+﻿Acumatica default_20.200.001 is the model for the Acumatica Web Endpoints defined as C# classes

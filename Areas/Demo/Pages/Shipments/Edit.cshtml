@@ -1,0 +1,229 @@
+﻿@page
+@model AcuERP_Demo.Areas.Demo.Pages.Shipments.EditModel
+
+<h4>SO_Shipment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SO_Shipment.Id" />
+            <div class="form-group">
+                <label asp-for="SO_Shipment.BaseCurrencyID" class="control-label"></label>
+                <input asp-for="SO_Shipment.BaseCurrencyID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.BaseCurrencyID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ControlQty" class="control-label"></label>
+                <input asp-for="SO_Shipment.ControlQty" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ControlQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.CurrencyRate" class="control-label"></label>
+                <input asp-for="SO_Shipment.CurrencyRate" class="form-control" />
+                <span asp-validation-for="SO_Shipment.CurrencyRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.CurrencyRateTypeID" class="control-label"></label>
+                <input asp-for="SO_Shipment.CurrencyRateTypeID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.CurrencyRateTypeID" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.CurrencyViewState" /> @Html.DisplayNameFor(model => model.SO_Shipment.CurrencyViewState)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.CustomerID" class="control-label"></label>
+                <input asp-for="SO_Shipment.CustomerID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.CustomerID" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.CreateNewShipmentForEveryOrder" /> @Html.DisplayNameFor(model => model.SO_Shipment.CreateNewShipmentForEveryOrder)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.Description" class="control-label"></label>
+                <input asp-for="SO_Shipment.Description" class="form-control" />
+                <span asp-validation-for="SO_Shipment.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.EffectiveDate" class="control-label"></label>
+                <input asp-for="SO_Shipment.EffectiveDate" class="form-control" />
+                <span asp-validation-for="SO_Shipment.EffectiveDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.FOBPoint" class="control-label"></label>
+                <input asp-for="SO_Shipment.FOBPoint" class="form-control" />
+                <span asp-validation-for="SO_Shipment.FOBPoint" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.OverrideFreightPrice" /> @Html.DisplayNameFor(model => model.SO_Shipment.OverrideFreightPrice)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.FreightAmount" class="control-label"></label>
+                <input asp-for="SO_Shipment.FreightAmount" class="form-control" />
+                <span asp-validation-for="SO_Shipment.FreightAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.FreightCost" class="control-label"></label>
+                <input asp-for="SO_Shipment.FreightCost" class="form-control" />
+                <span asp-validation-for="SO_Shipment.FreightCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.FreightCurrencyID" class="control-label"></label>
+                <input asp-for="SO_Shipment.FreightCurrencyID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.FreightCurrencyID" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.GroundCollect" /> @Html.DisplayNameFor(model => model.SO_Shipment.GroundCollect)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.Hold" /> @Html.DisplayNameFor(model => model.SO_Shipment.Hold)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.Insurance" /> @Html.DisplayNameFor(model => model.SO_Shipment.Insurance)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.LastModifiedDateTime" class="control-label"></label>
+                <input asp-for="SO_Shipment.LastModifiedDateTime" class="form-control" />
+                <span asp-validation-for="SO_Shipment.LastModifiedDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.LocationID" class="control-label"></label>
+                <input asp-for="SO_Shipment.LocationID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.LocationID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.Operation" class="control-label"></label>
+                <input asp-for="SO_Shipment.Operation" class="form-control" />
+                <span asp-validation-for="SO_Shipment.Operation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.Owner" class="control-label"></label>
+                <input asp-for="SO_Shipment.Owner" class="form-control" />
+                <span asp-validation-for="SO_Shipment.Owner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.PackageCount" class="control-label"></label>
+                <input asp-for="SO_Shipment.PackageCount" class="form-control" />
+                <span asp-validation-for="SO_Shipment.PackageCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.PackageWeight" class="control-label"></label>
+                <input asp-for="SO_Shipment.PackageWeight" class="form-control" />
+                <span asp-validation-for="SO_Shipment.PackageWeight" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.Picked" /> @Html.DisplayNameFor(model => model.SO_Shipment.Picked)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ReciprocalRate" class="control-label"></label>
+                <input asp-for="SO_Shipment.ReciprocalRate" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ReciprocalRate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.ResidentialDelivery" /> @Html.DisplayNameFor(model => model.SO_Shipment.ResidentialDelivery)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.SaturdayDelivery" /> @Html.DisplayNameFor(model => model.SO_Shipment.SaturdayDelivery)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShipmentDate" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShipmentDate" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShipmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShipmentNbr" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShipmentNbr" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShipmentNbr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShippedQty" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShippedQty" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShippedQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShippedVolume" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShippedVolume" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShippedVolume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShippedWeight" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShippedWeight" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShippedWeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShippingTerms" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShippingTerms" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShippingTerms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShippingZoneID" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShippingZoneID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShippingZoneID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ShipVia" class="control-label"></label>
+                <input asp-for="SO_Shipment.ShipVia" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ShipVia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.Status" class="control-label"></label>
+                <input asp-for="SO_Shipment.Status" class="form-control" />
+                <span asp-validation-for="SO_Shipment.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.ToWarehouseID" class="control-label"></label>
+                <input asp-for="SO_Shipment.ToWarehouseID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.ToWarehouseID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.Type" class="control-label"></label>
+                <input asp-for="SO_Shipment.Type" class="form-control" />
+                <span asp-validation-for="SO_Shipment.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_Shipment.UseCustomersAccount" /> @Html.DisplayNameFor(model => model.SO_Shipment.UseCustomersAccount)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.WarehouseID" class="control-label"></label>
+                <input asp-for="SO_Shipment.WarehouseID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.WarehouseID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_Shipment.WorkgroupID" class="control-label"></label>
+                <input asp-for="SO_Shipment.WorkgroupID" class="form-control" />
+                <span asp-validation-for="SO_Shipment.WorkgroupID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

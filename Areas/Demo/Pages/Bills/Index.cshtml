@@ -1,0 +1,150 @@
+﻿@page
+@model IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].ApprovedForPayment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Balance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].BranchID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].CashAccount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].CurrencyID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].DueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Hold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].LocationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].PostPeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Project)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].ReferenceNbr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].TaxTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Terms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].Vendor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].VendorRef)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AP_Bill[0].LastModifiedDateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AP_Bill) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApprovedForPayment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Balance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CashAccount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrencyID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostPeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Project)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReferenceNbr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Terms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vendor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorRef)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastModifiedDateTime)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

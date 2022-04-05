@@ -1,0 +1,94 @@
+﻿@page
+@model AcuERP_Demo.Areas.Demo.Pages.SalesOrders.EditModel
+
+<h4>SO_SalesOrder</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SO_SalesOrder.Id" />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_SalesOrder.Approved" /> @Html.DisplayNameFor(model => model.SO_SalesOrder.Approved)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.ContactID" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.ContactID" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.ContactID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.CustomerID" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.CustomerID" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.CustomerID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.CustomerOrder" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.CustomerOrder" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.CustomerOrder" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.Date" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.Date" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.Description" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.Description" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SO_SalesOrder.Hold" /> @Html.DisplayNameFor(model => model.SO_SalesOrder.Hold)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.OrderedQty" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.OrderedQty" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.OrderedQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.OrderNbr" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.OrderNbr" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.OrderNbr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.OrderTotal" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.OrderTotal" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.OrderTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.OrderType" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.OrderType" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.OrderType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.ShipToAddress" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.ShipToAddress" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.ShipToAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.Status" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.Status" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SO_SalesOrder.Totals" class="control-label"></label>
+                <input asp-for="SO_SalesOrder.Totals" class="form-control" />
+                <span asp-validation-for="SO_SalesOrder.Totals" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

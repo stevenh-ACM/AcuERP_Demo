@@ -1,0 +1,270 @@
+﻿@page
+@model AcuERP_Demo.Areas.Demo.Pages.Shipments.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].BaseCurrencyID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ControlQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].CurrencyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].CurrencyRateTypeID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].CurrencyViewState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].CustomerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].CreateNewShipmentForEveryOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].EffectiveDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].FOBPoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].OverrideFreightPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].FreightAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].FreightCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].FreightCurrencyID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].GroundCollect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Hold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Insurance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].LastModifiedDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].LocationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Operation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].PackageCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].PackageWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Picked)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ReciprocalRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ResidentialDelivery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].SaturdayDelivery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShipmentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShipmentNbr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShippedQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShippedVolume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShippedWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShippingTerms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShippingZoneID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ShipVia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].ToWarehouseID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].UseCustomersAccount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].WarehouseID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SO_Shipment[0].WorkgroupID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SO_Shipment) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BaseCurrencyID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ControlQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrencyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrencyRateTypeID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrencyViewState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateNewShipmentForEveryOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EffectiveDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FOBPoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OverrideFreightPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FreightAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FreightCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FreightCurrencyID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroundCollect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hold)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Insurance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastModifiedDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Operation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Picked)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReciprocalRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResidentialDelivery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaturdayDelivery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShipmentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShipmentNbr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippedQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippedVolume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippedWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippingTerms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippingZoneID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShipVia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToWarehouseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UseCustomersAccount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WarehouseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkgroupID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -7,14 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="AcuERP_Demo.sln" />
+    <Compile Remove="External\**" />
+    <Content Remove="External\**" />
+    <EmbeddedResource Remove="External\**" />
+    <None Remove="External\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
+    <None Include="AcuERP_Demo.sln" />
+    <None Include="C:\Users\stevenh\Source\repos\AcuERP_Demo\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acumatica.Default_20.200.001" Version="2.0.0" />
+    <PackageReference Include="Acumatica.RESTClient" Version="2.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -23,6 +33,10 @@
 
   <ItemGroup>
     <Folder Include="Areas\Demo\Pages\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\stevenh\Source\repos\AcuERP_Demo\.editorconfig" />
   </ItemGroup>
 
 </Project>

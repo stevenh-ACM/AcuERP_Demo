@@ -14,11 +14,13 @@ namespace AcuERP_Demo.Areas.Demo.Pages.AcuCreds
 {
     public class EditModel : PageModel
     {
-        private readonly AcuERP_Demo.Data.AppDbContext _context;
+        private readonly AppDbContext _context;
+        private readonly ILogger<IndexModel> _logger;
 
-        public EditModel(AcuERP_Demo.Data.AppDbContext context)
+        public EditModel(AppDbContext context, ILogger<IndexModel> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [BindProperty]

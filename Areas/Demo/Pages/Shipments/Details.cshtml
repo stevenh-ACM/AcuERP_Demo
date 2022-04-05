@@ -1,0 +1,259 @@
+﻿@page
+@model AcuERP_Demo.Areas.Demo.Pages.Shipments.DetailsModel
+
+<div>
+    <h4>SO_Shipment</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.BaseCurrencyID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.BaseCurrencyID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ControlQty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ControlQty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.CurrencyRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.CurrencyRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.CurrencyRateTypeID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.CurrencyRateTypeID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.CurrencyViewState)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.CurrencyViewState)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.CustomerID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.CustomerID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.CreateNewShipmentForEveryOrder)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.CreateNewShipmentForEveryOrder)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.EffectiveDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.EffectiveDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.FOBPoint)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.FOBPoint)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.OverrideFreightPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.OverrideFreightPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.FreightAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.FreightAmount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.FreightCost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.FreightCost)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.FreightCurrencyID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.FreightCurrencyID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.GroundCollect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.GroundCollect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Hold)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Hold)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Insurance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Insurance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.LastModifiedDateTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.LastModifiedDateTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.LocationID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.LocationID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Operation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Operation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Owner)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Owner)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.PackageCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.PackageCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.PackageWeight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.PackageWeight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Picked)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Picked)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ReciprocalRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ReciprocalRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ResidentialDelivery)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ResidentialDelivery)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.SaturdayDelivery)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.SaturdayDelivery)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShipmentDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShipmentDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShipmentNbr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShipmentNbr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShippedQty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShippedQty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShippedVolume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShippedVolume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShippedWeight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShippedWeight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShippingTerms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShippingTerms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShippingZoneID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShippingZoneID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ShipVia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ShipVia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.ToWarehouseID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.ToWarehouseID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.UseCustomersAccount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.UseCustomersAccount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.WarehouseID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.WarehouseID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SO_Shipment.WorkgroupID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SO_Shipment.WorkgroupID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SO_Shipment.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

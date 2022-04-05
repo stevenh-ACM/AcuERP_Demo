@@ -8,16 +8,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AcuERP_Demo.Data;
 using AcuERP_Demo.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AcuERP_Demo.Areas.Demo.Pages.AcuCreds
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
-        private readonly AcuERP_Demo.Data.AppDbContext _context;
+        private readonly AppDbContext _context;
+        private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(AcuERP_Demo.Data.AppDbContext context)
+        public IndexModel(AppDbContext context, ILogger<IndexModel> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public IList<AcuAuth> AcuAuth { get;set; }

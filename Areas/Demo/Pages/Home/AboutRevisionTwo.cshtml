@@ -8,25 +8,26 @@
     <img class="card-img" src="~/images/bg_homepage.jpg" style="height:auto"/> 
     <div class="card-img-overlay">
         <div class="card-body">
-            <h2 class="card-title">Demo Company Overview</h2>
+            <h2 class="card-title">Demo Company Overview</h2><br/><br/>
             <h4>Key Statistics</h4>
                 <ul class="card-text">
-                    <li>Founded: January 2013</li>
-                    <li>Employees: about 30</li>
-                    <li>Revenue: ~$20M annually</li>
+                    <li>Founded: January @Model.DisplayStartYear</li>
+                    <li>Employees: ~ @Model.DisplayNumOfEmployees</li>
+                    <li>Revenue: ~$ @Model.DisplayTotalRevenue M annually</li>
                 </ul>
         </div>  
         <div class="card-footer bg-transparent border-0">
-            <p><a class="btn btn-primary" asp-area="Demo" asp-page="/AcuCreds/Index">Demo Setup &raquo;</a></p>
+            <p><a class="btn btn-primary" asp-area="" asp-page="/Index">Go Back &raquo;</a></p>
         </div>
     </div>   
 </div>            
 <br/><br/>
-<p class="card-text text-wrap"><b>Revision Two</b> is a fictional company used for demonstrating Acumatica features. The company has multiple lines of business, branches, a European based entity, and several employee personas to demonstrate the full capabilities of Acumatica.</p>
-
+<div class="container-fluid p-3 mb-2">
+    <p class="card-text text-wrap"><b>Revision Two</b> is a fictional company used to demonstrate Acumatica Cloud ERP OpenAPI capabilities. The company has multiple lines of business, a few branches, a European based entity, and several employee personas to demonstrate the full capabilities of Acumatica Cloud ERP.</p>
+</div>
 
 <div class="container-fluid p-3 mb-5">
-    <h4>Demo Data</h4>
-    <p class="text-break">RevisionTwo ERP data is maintained on the <a href="https://sso.acumatica.com/(W(1))/Main?ScreenId=SL000006&PageID=958c3fe4-555c-4883-a849-b2e34c3f85d0" target="_blank">Acumatica Partner Portal.   </a>You must have an authorized partner to access this site.</p>
-    <p class="text-break">The data is updated monthly so you always have a current version to demonstrate. As new versions are released, the snapshot will be updated so you can restore the demo data into the latest version of Acumatica ERP that is available for download on the partner portal.</p>
+    <h5>Acumatica Cloud ERP Demo Data</h5>
+    <p class="text-wrap">RevisionTwo ERP data is maintained on the <a href="https://sso.acumatica.com/(W(1))/Main?ScreenId=SL000006&PageID=958c3fe4-555c-4883-a849-b2e34c3f85d0" target="_blank">Acumatica Partner Portal.   </a>You must be an authorized partner to access this site.</p>
+    <p class="text-wrap">The demo data is updated monthly using SnapShots so you always current data to demonstrate. As new upgrades (R1 & R2) are released, the snapshot will be updated so you can restore the demo data into that latest version of Acumatica ERP that is available for download on the partner portal.</p>
 </div>
